@@ -15,12 +15,11 @@ describe Metaipsum do
 
   it 'should warn about small sources' do
     ARGV[0] = 'spec/short_test.txt' # Under 10 words
-    Metaipsum.generator.should == 'Short input detected. A bigger source is recommended.'
+    Metaipsum.generator.should == nil
   end
 
-  it 'should handle sentence splitting' do
-    ARGV[0] = 'spec/test.txt'
-    ARGV[1] = '-s'
-    Metaipsum.generator.should == ["This is a test of the energy response system", "All systems down", "Crap!"]
+  it 'should pick a random number between 20 and 30 for count' do
+    (20..30).should cover(Metaipsum.count)
   end
+
 end
