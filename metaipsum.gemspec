@@ -13,6 +13,7 @@ Gem::Specification.new do |gem|
   gem.executables   = ["metaipsum"]
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.add_development_dependency "rspec", ">= 2.0.0"
+  gem.add_development_dependency "rake"
   gem.name          = "metaipsum"
   gem.require_paths = ["lib"]
   gem.version       = Metaipsum::VERSION
