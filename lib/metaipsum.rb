@@ -1,4 +1,5 @@
 require "metaipsum/version"
+require 'clipboard'
 
 module Metaipsum
 
@@ -22,6 +23,14 @@ module Metaipsum
 
   end
 
+  def self.clipboard
+
+    Clipboard.copy "foo"
+    Clipboard.paste
+
+  end
+
+
   def self.generator
 
     base = ARGV[0]
@@ -39,6 +48,8 @@ module Metaipsum
       count.times do
         ipsum << array.sample + " "
       end
+
+      Clipboard.copy ipsum
       
       print <<-eos
       You passed in:
@@ -47,7 +58,10 @@ module Metaipsum
       Here is your ipsum text:
       #{ ipsum }
 
+      It has been copied to your clipboard.
+
       eos
+
 
     else
 

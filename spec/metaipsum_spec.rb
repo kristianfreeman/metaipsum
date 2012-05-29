@@ -22,4 +22,8 @@ describe Metaipsum do
     (20..30).should cover(Metaipsum.count)
   end
 
+  it 'should copy to clipboard' do
+    Metaipsum.clipboard.should == "foo"
+  end
+
 end

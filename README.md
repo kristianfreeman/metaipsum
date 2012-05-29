@@ -23,9 +23,7 @@ Run the `metaipsum` command on your command-line with a file as an argument:
 
     metaipsum source.txt
 
-The tool will return your ipsum placeholder text.
-
-In the next release, it will automatically copy it to your clipboard.
+The tool will return your ipsum placeholder text, as well as *copy it to your clipboard*.
 
 ## Contributing
 
