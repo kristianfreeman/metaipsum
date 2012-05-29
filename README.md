@@ -19,7 +19,13 @@ Or install it yourself as:
 
 ## Usage
 
-Will be added on first functioning release.
+Run the `metaipsum` command on your command-line with a file as an argument:
+
+    metaipsum source.txt
+
+The tool will return your ipsum placeholder text.
+
+In the next release, it will automatically copy it to your clipboard.
 
 ## Contributing
 
