@@ -1,4 +1,5 @@
 # metaipsum
+[![Build Status](https://secure.travis-ci.org/imkmf/metaipsum.png?branch=master)](http://travis-ci.org/imkmf/metaipsum)
 
 **metaipsum** is a tool for creating *Lorem ipsum* generators. Get it? It's kind of meta, right?
 
